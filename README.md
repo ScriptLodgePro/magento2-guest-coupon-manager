@@ -46,7 +46,4 @@ Other Extensions
 
 
 
-git add README.md
-git add composer.json
-git add etc/
-git add registration.php
+===
