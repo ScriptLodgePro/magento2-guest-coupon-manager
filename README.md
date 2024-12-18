@@ -32,7 +32,17 @@ Contribution
 Want to contribute to this extension? The quickest way is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
 
-Support
+Support:
+---
+Get Data record for guestEmail used coupon code:
+
+    SELECT increment_id AS order_id, customer_email AS guest_email, coupon_code,created_at,grand_total FROM  sales_order WHERE customer_id IS NULL AND coupon_code IS NOT NULL ORDER BY  created_at DESC limit 10;
+
+
+    SELECT rule_id,name,description,from_date,to_date,uses_per_customer, times_used FROM `salesrule` WHERE name="Kaffee15";
+
+
+Support:
 ---
 If you encounter any problems or bugs, please open an issue on [GitHub](https://github.com/scriptlodgepro/magento2-reindex/issues).
 
@@ -46,4 +56,4 @@ Other Extensions
 
 
 
-===
+======
